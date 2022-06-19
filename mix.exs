@@ -5,7 +5,7 @@ defmodule Dailyploy.MixProject do
     [
       app: :dailyploy,
       version: "0.1.0",
-      elixir: "~> 1.5",
+      elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -56,11 +56,11 @@ defmodule Dailyploy.MixProject do
   defp deps do
     [
       # pagination
-      {:phoenix, "~> 1.4.9"},
-      {:phoenix_pubsub, "~> 1.1"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:phoenix_html, "~> 2.6"},
-      {:ecto_sql, "~> 3.1"},
+      {:phoenix, "~> 1.6"},
+      {:phoenix_pubsub, "~> 2.0"},
+      {:phoenix_ecto, "~> 4.1"},
+      {:phoenix_html, "~> 3.0", override: true},
+      {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
